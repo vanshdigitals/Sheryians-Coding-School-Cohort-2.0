@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* Use Montserrat from Google Fonts with sensible fallbacks */
+  font-family: "Montserrat", "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif;
+  text-align: center;
+  background-color: #f6f8fa;
+}
+
+header {
+  background-color: #1a2434;
+  color: white;
+  padding: 80px 0 65px;
+}
+
+header h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+header p {
+  font-weight: 300;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.about-me {
+  padding: 30px 125px 15px;
+}
+
+.about-me-content {
+  background-color: #ffffff;
+  padding: 65px 40px 55px;
+  border-radius: 10px;
+  line-height: 1.3;
+}
+
+.about-me h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.education {
+  padding: 15px 125px;
+}
+
+.education-content {
+  background-color: #daf0fe;
+  padding: 65px 175px 45px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.education-content div {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  padding: 18px 0;
+  border-radius: 8px;
+}
+
+.education h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.skills {
+  padding: 15px 125px;
+}
+
+.skills-content {
+  background-color: #fef1c2;
+  padding: 65px 235px 45px;
+  border-radius: 10px;
+}
+
+.skills-content h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.skills-content div {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  padding: 18px 0;
+  border-radius: 8px;
+}
+
+.skills-content p {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.projects {
+  padding: 15px 125px;
+}
+
+.projects-content {
+  background-color: #ebe6fd;
+  padding: 65px 175px 45px;
+  border-radius: 10px;
+}
+
+.projects-content h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.projects-content div {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  padding: 18px 0;
+  border-radius: 8px;
+}
+
+.projects-content p {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.contact-me {
+  padding: 15px 125px 30px;
+}
+
+.contact-me-content {
+  background-color: #d7fce4;
+  padding: 65px 235px 45px;
+  border-radius: 10px;
+}
+
+.contact-me-content h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.contact-me-content div {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  padding: 18px 0;
+  border-radius: 8px;
+}
+
+.contact-me-content p {
+  font-weight: 500;
+}
+
+footer {
+  background-color: #1a2434;
+  color: white;
+  padding: 30px 0;
+}
+
+footer p {
+  text-transform: uppercase;
+}
+
+/* Mobile-only responsive adjustments (<= 480px) */
+@media (max-width: 480px) {
+  header {
+    padding: 28px 0 20px;
+  }
+  header h2 {
+    font-size: 22px;
+  }
+  header p {
+    font-size: 14px;
+  }
+
+  /* Reduce large horizontal paddings on mobile */
+  .about-me,
+  .education,
+  .skills,
+  .projects,
+  .contact-me {
+    padding: 14px 28px;
+  }
+
+  /* Make the inner white boxes use comfortable mobile padding */
+  .about-me-content,
+  .education-content,
+  .skills-content,
+  .projects-content,
+  .contact-me-content {
+    padding: 20px 20px;
+    border-radius: 8px;
+  }
+
+  /* Slightly smaller section headings on mobile */
+  .about-me h3,
+  .education h3,
+  .skills-content h3,
+  .projects-content h3,
+  .contact-me-content h3 {
+    font-size: 20px;
+  }
+
+  /* Reduce vertical spacing for list-like items */
+  .education-content div,
+  .skills-content div,
+  .projects-content div,
+  .contact-me-content div {
+    padding: 10px 0;
+    margin-bottom: 8px;
+  }
+
+  /* Make paragraph text more readable on small screens */
+  body,
+  p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
